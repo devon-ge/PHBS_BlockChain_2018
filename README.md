@@ -6,13 +6,13 @@ Bitcoin is the first public digital currency and created in 2009. Bitcoin is the
 
 ![BTC price](images/market_price.png)
 
-Figure 1 Bitcoin price (Source: blockchain.com)
+Figure 1 Bitcoin price (Data Source: [Blockchain](https://www.blockchain.com/charts/market-price?timespan=all))
 
 As a speculative asset, social platform attention reflects how popular Bitcoin is. Intuitively, when people are optimistic about Bitcoin, the probability of an increase in Bitcoin price is higher due to speculative buying. Besides, more information release about Bitcoin can attract incremental capital. Investors who are not familiar with Bitcoins start to buy such a "Currency" because of information overload. Figure 2 shows the Google trends in the past 5 years.
 
 ![BTC Google trends of Bitcoin](images/trends.png)
 
-Figure 2 Google trends of Bitcoin (Source: [Google trends](https://trends.google.com/trends/explore?date=today%205-y&q=bitcoin))
+Figure 2 Google trends of Bitcoin (Data source: [Google trends](https://trends.google.com/trends/explore?date=today%205-y&q=bitcoin))
 
 ## 2. Literature Review
 
@@ -32,7 +32,7 @@ where BTC the price of one bitcoin, *t* is an average amount of transactions, *k
 
 ![BTC transaction per block](images/transactions_per_block.png)
 
-Figure 3 Bitcoin price (Source: blockchain.com)
+Figure 3 Bitcoin price (Data source: [Blockchain](https://www.blockchain.com/charts/n-transactions-per-block?timespan=all))
 
 The second part *R* in the above decomposition is miner revenue per transaction (transaction fees). To some extent, it measures the less-rational factor such as speculative trade, i.e., the sentiment. Investors buy and hold Bitcoins for the sake of value increase or hedging the real world risk like fiat currency depreciation. Miners thus have the incentive to do mining jobs. Figure 4 shows the mines' revenue per transaction (MRPT) since 2009. This is calculated by the following formula
 
@@ -42,7 +42,7 @@ where the numerator and denominator data are offered by blockchian.com.
 
 ![Miners' revenue per transaction](images/miners_revenue_per_transaction.png)
 
-Figure 4 Miners' revenue per transaction (Source: blockchain.com)
+Figure 4 Miners' revenue per transaction (Data source: [Blockchain](https://www.blockchain.com), plotted using [miners_revenue_per_transaction.csv](data/miners_revenue_per_transaction.csv))
 
 ### 3.1 Data
 

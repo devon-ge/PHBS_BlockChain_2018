@@ -102,6 +102,6 @@ This project simply replicates existing literature and compare present arguments
 
 ## Appendix
 
-* Data used in this project are saved in [data](data) folder.
-* Figure 1-4 are plotted via python matplotlib package. See the [code](visualization.ipynb) and [dependencies](requirements.txt). Run `$ python -m pip install -r requirements.txt` in terminal to install the dependencies if necessary.
+* Data used in this project are saved in [data](data) folder. See the [instruction](data/README.md) for details.
+* Figure 1-4 are plotted via python matplotlib package. See the [code](visualization.ipynb) and [dependencies](requirements.txt). Run `python -m pip install -r requirements.txt` in terminal to install the dependencies if necessary.
 * All figures shown in this project are saved in [images](images) folder.

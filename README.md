@@ -50,18 +50,38 @@ The decomposition of Bitcoin price indicates that we need two kinds of data, one
 
 ![Sentiment analysis](images/sentiment.jpg)
 
+Figure 5 Sentdex sentiment of Bitcoins
+
 ### 3.2 Model
 
 According to Saxa (2014), Bitcoin and sentiment can be modeled through autoregressive model with one-period lag.
 
 ![AR 1](images/ar1.jpg)
 
-The augmented AR(1) model includes one more explanatory varible - sentiment.
+The augmented AR(1), so-called AR(X) model includes one more explanatory varible - sentiment.
 
 ![AR x](images/arx.jpg)
 
-In both formula, *Revenue* represents miners' revenue per transaction as defined in Section 3. The estimation of AR(1) model shows that the coefficient is about 0.940 with a significance level of 1%.
+In both formula, *Revenue* represents miners' revenue per transaction as defined in Section 3. Given the distinct volatility in different periods, estimation should be divided into several windows. The *sentiment* is defined in three ways: positive, negative and cumulative.
+
+## 4 Results
+
+The estimation of AR(1) model on the whole period shows that the coefficient is about 0.940 with a significance level of 1%.
 
 ![AR1 result](images/ar1_result.jpg)
 
-Due to availability of sentiment data(see the sentiment figure above, there are many missing data). I compared the estimation results of different periods shown in Bukovina & Marticek (2016), which follows Saxa (2014)
+Due to availability of sentiment data(see the sentiment figure above, there are many missing data). I compared the estimation results of different periods shown in Bukovina & Marticek (2016), which follows Saxa (2014).
+
+![Long-term results](images/long-term.jpg)
+
+Figure 6 Estimation of revenue on sentiment (December 2013 - December 2014)
+
+As Fig. 6 shows, the difference of R-squares between the two models (AR(1) vs AR(X)) is trivial. The extra explanatory - the sentiment proxy is statistically significant but economically negligible. One possible reason is that long-term sentiment can be absorbed, especially for the cumulative measure. The negative part almost accounts for nothing new. Thus, we are interested in the relationship in short-term. To some extent, it takes some time to fully mitigate short-term sentimental shock. And the difference in R-square should be large. Short-term windows estimation is shown in Figure 7.
+
+![Short-term results](images/short-term.jpg)
+
+Figure 7 Estimation of revenue on sentiment (December 2013 - March 2014)
+
+Fig. 7 illustrates that while the coefficient in AR(1) model is almost the same, the increment of R_square is indeed larger. The result also shows the little explanatory power of negative sentiment, which is consistent with the results from one year period estimation (See Fig. 6). 
+
+This interesting finding may suggest that pure attention or sentiment of Bitcoin strengthen people's expection, thus leading to high volatility. The negative sentiment, however, exlains too little partly due to the small amount of information. For example, any bad real world news can lead to an increase of Bitcoin price if investors want to hedge risk. The spill-over effect and extranality in return reinforce such a senario. This may increase the trading volume and volatility due to heterogeneous expectations among market participants. But the converse may not hold. If there is no bad news in real world in some periods, it's hard to say that Bitcoin investors are in bad mood. The sentiment structure is asymmetric, i.e., it's more common to observe positive sentiment. So is the cumulative.

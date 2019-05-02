@@ -82,7 +82,7 @@ As Fig. 6 shows, the difference of R-squares between the two models (AR(1) vs AR
 
 Figure 7 Estimation of revenue on sentiment (December 2013 - March 2014)
 
-Fig. 7 illustrates that while the coefficient in the AR(1) model is almost the same, the increment of R_square is indeed larger. The result also shows the little explanatory power of negative sentiment, which is consistent with the results from one year period estimation (See Fig. 6). 
+Fig. 7 illustrates that while the coefficient in the AR(1) model is almost the same, the increment of R_square is indeed larger. The result also shows the little explanatory power of negative sentiment, which is consistent with the results from one year period estimation (See Fig. 6).
 
 This interesting finding may suggest that pure attention or sentiment of Bitcoin strengthen people's expectation, thus leading to high volatility. The negative sentiment, however, explains too little, partly due to the small amount of information. For example, any bad real-world news can lead to an increase of Bitcoin price if investors want to hedge risk. The spill-over effect and externality in return reinforce such a scenario. This may increase the trading volume and volatility due to heterogeneous expectations among market participants. But the converse may not hold. If there is no bad news in the real world in some periods, it's hard to say that Bitcoin investors are in a bad mood. The sentiment structure is asymmetric, i.e., it's more common to observe positive sentiment. So is the cumulative.
 
